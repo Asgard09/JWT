@@ -60,7 +60,9 @@ public class User implements UserDetails {
         this.lastName = lastName;
     }
 
+    /*You can change the username by email*/
     public String getUsername() {
+        /*return this.email*/
         return username;
     }
 
