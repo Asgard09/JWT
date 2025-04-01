@@ -70,6 +70,10 @@ public class JwtService {
         return resolver.apply(claims);
     }
 
+    /*
+    * A key-value pair inside the JWT payload.
+    * Payload is the container that holds all claims together.
+    */
     private Claims extractAllClaims(String token) {
         return Jwts
                 .parser()
